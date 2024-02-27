@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A0307852AB688710066971A /* USBDeviceSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7A0307842AB688710066971A /* USBDeviceSwift */; };
+		7A6115C52B7129B60094DDB3 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 7A6115C42B7129B60094DDB3 /* KeyboardShortcuts */; };
+		7A6115C82B712E0B0094DDB3 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = 7A6115C72B712E0B0094DDB3 /* Defaults */; };
+		7A6115CB2B712E3F0094DDB3 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 7A6115CA2B712E3F0094DDB3 /* LaunchAtLogin */; };
 		7A6389582AB6849800455A65 /* CameraPanTiltApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6389572AB6849800455A65 /* CameraPanTiltApp.swift */; };
-		7A63895A2AB6849800455A65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6389592AB6849800455A65 /* ContentView.swift */; };
 		7A63895C2AB6849900455A65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A63895B2AB6849900455A65 /* Assets.xcassets */; };
 		7A63895F2AB6849900455A65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A63895E2AB6849900455A65 /* Preview Assets.xcassets */; };
+		7A869C822ADD653D0083BCEE /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A869C812ADD653D0083BCEE /* GameController.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7A6389542AB6849800455A65 /* CameraPanTilt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraPanTilt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6389572AB6849800455A65 /* CameraPanTiltApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPanTiltApp.swift; sourceTree = "<group>"; };
-		7A6389592AB6849800455A65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7A63895B2AB6849900455A65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A63895E2AB6849900455A65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7A6389602AB6849900455A65 /* CameraPanTilt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CameraPanTilt.entitlements; sourceTree = "<group>"; };
+		7A869C812ADD653D0083BCEE /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A6115C82B712E0B0094DDB3 /* Defaults in Frameworks */,
+				7A869C822ADD653D0083BCEE /* GameController.framework in Frameworks */,
+				7A0307852AB688710066971A /* USBDeviceSwift in Frameworks */,
+				7A6115CB2B712E3F0094DDB3 /* LaunchAtLogin in Frameworks */,
+				7A6115C52B7129B60094DDB3 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +47,7 @@
 			children = (
 				7A6389562AB6849800455A65 /* CameraPanTilt */,
 				7A6389552AB6849800455A65 /* Products */,
+				7A869C802ADD653D0083BCEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				7A6389572AB6849800455A65 /* CameraPanTiltApp.swift */,
-				7A6389592AB6849800455A65 /* ContentView.swift */,
 				7A63895B2AB6849900455A65 /* Assets.xcassets */,
 				7A6389602AB6849900455A65 /* CameraPanTilt.entitlements */,
 				7A63895D2AB6849900455A65 /* Preview Content */,
@@ -67,6 +76,14 @@
 				7A63895E2AB6849900455A65 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7A869C802ADD653D0083BCEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A869C812ADD653D0083BCEE /* GameController.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +102,12 @@
 			dependencies = (
 			);
 			name = CameraPanTilt;
+			packageProductDependencies = (
+				7A0307842AB688710066971A /* USBDeviceSwift */,
+				7A6115C42B7129B60094DDB3 /* KeyboardShortcuts */,
+				7A6115C72B712E0B0094DDB3 /* Defaults */,
+				7A6115CA2B712E3F0094DDB3 /* LaunchAtLogin */,
+			);
 			productName = CameraPanTilt;
 			productReference = 7A6389542AB6849800455A65 /* CameraPanTilt.app */;
 			productType = "com.apple.product-type.application";
@@ -97,7 +120,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					7A6389532AB6849800455A65 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -113,6 +136,12 @@
 				Base,
 			);
 			mainGroup = 7A63894B2AB6849800455A65;
+			packageReferences = (
+				7A0307832AB688710066971A /* XCRemoteSwiftPackageReference "USBDeviceSwift" */,
+				7A6115C32B7129B60094DDB3 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+				7A6115C62B712E0B0094DDB3 /* XCRemoteSwiftPackageReference "Defaults" */,
+				7A6115C92B712E3F0094DDB3 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
+			);
 			productRefGroup = 7A6389552AB6849800455A65 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +168,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A63895A2AB6849800455A65 /* ContentView.swift in Sources */,
 				7A6389582AB6849800455A65 /* CameraPanTiltApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +179,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -180,9 +209,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -211,6 +242,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -240,9 +272,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -266,19 +300,25 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CameraPanTilt/CameraPanTilt.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"CameraPanTilt/Preview Content\"";
 				DEVELOPMENT_TEAM = 46XM69DKZF;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.friggeri.CameraPanTilt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,19 +333,25 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CameraPanTilt/CameraPanTilt.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"CameraPanTilt/Preview Content\"";
 				DEVELOPMENT_TEAM = 46XM69DKZF;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.friggeri.CameraPanTilt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -336,6 +382,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A0307832AB688710066971A /* XCRemoteSwiftPackageReference "USBDeviceSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Arti3DPlayer/USBDeviceSwift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		7A6115C32B7129B60094DDB3 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.17.0;
+			};
+		};
+		7A6115C62B712E0B0094DDB3 /* XCRemoteSwiftPackageReference "Defaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Defaults";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		7A6115C92B712E3F0094DDB3 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A0307842AB688710066971A /* USBDeviceSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A0307832AB688710066971A /* XCRemoteSwiftPackageReference "USBDeviceSwift" */;
+			productName = USBDeviceSwift;
+		};
+		7A6115C42B7129B60094DDB3 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A6115C32B7129B60094DDB3 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+		7A6115C72B712E0B0094DDB3 /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A6115C62B712E0B0094DDB3 /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
+		};
+		7A6115CA2B712E3F0094DDB3 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A6115C92B712E3F0094DDB3 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
+			productName = LaunchAtLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7A63894C2AB6849800455A65 /* Project object */;
 }

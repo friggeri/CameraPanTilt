@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "defaults",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sindresorhus/Defaults",
+      "state" : {
+        "branch" : "main",
+        "revision" : "0f73f9401a416336931f2d598662cc524a13b21f"
+      }
+    },
+    {
+      "identity" : "keyboardshortcuts",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sindresorhus/KeyboardShortcuts",
+      "state" : {
+        "revision" : "ac12762853126cf2e7ad63a6a58e1c9f58c6a0ee",
+        "version" : "1.17.0"
+      }
+    },
+    {
+      "identity" : "launchatlogin",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sindresorhus/LaunchAtLogin",
+      "state" : {
+        "branch" : "main",
+        "revision" : "d811817ce35d74872a1170c851cab243a2b8b559"
+      }
+    },
+    {
+      "identity" : "usbdeviceswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Arti3DPlayer/USBDeviceSwift",
+      "state" : {
+        "branch" : "master",
+        "revision" : "78cdfede0475f518ee9e8ab08cc559e75436ac25"
+      }
+    }
+  ],
+  "version" : 2
+}
