@@ -113,6 +113,7 @@ open class HIDDeviceMonitor {
         let report = UnsafeMutablePointer<UInt8>.allocate(capacity: device.reportSize)
         
         let inputCallback : IOHIDReportCallback = { inContext, inResult, inSender, type, reportId, report, reportLength in
+            print("here")
             guard let inContext = inContext else {
                 return
             }

@@ -11,7 +11,7 @@ let panTiltVendorId = 0x2E8A
 let panTiltProductId = 0x101A
 
 let joystickVendorId = 0x1D50
-let wiredJoystickProductId = 0x615F
+let wiredJoystickProductId = 0x615E
 let wirelessJoystickProductId = 0x615F
 
 extension HIDDevice {
