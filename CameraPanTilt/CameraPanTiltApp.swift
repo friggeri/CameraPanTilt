@@ -2,6 +2,7 @@ import Foundation
 import IOKit
 import IOKit.hid
 import IOKit.usb
+import LaunchAtLogin
 import OSLog
 import SwiftUI
 import USBDeviceSwift
@@ -110,10 +111,19 @@ struct CameraPanTiltApp: App {
             "Pan Tilt",
             systemImage: "camera"
         ) {
+             SettingsLink {
+                 Text("Settings")
+             }
+             Divider()
             Button("Quit") {
                 NSApp.terminate(nil)
             }
             .keyboardShortcut("Q")
         }
+         Settings {
+             Group {
+                 LaunchAtLogin.Toggle()
+             }.padding()
+         }
     }
 }

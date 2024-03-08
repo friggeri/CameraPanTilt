@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7A3996B12B8E152800F257C9 /* HIDDeviceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3996B02B8E152800F257C9 /* HIDDeviceMonitor.swift */; };
-		7A6115C52B7129B60094DDB3 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 7A6115C42B7129B60094DDB3 /* KeyboardShortcuts */; };
-		7A6115C82B712E0B0094DDB3 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = 7A6115C72B712E0B0094DDB3 /* Defaults */; };
 		7A6115CB2B712E3F0094DDB3 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 7A6115CA2B712E3F0094DDB3 /* LaunchAtLogin */; };
 		7A6389582AB6849800455A65 /* CameraPanTiltApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6389572AB6849800455A65 /* CameraPanTiltApp.swift */; };
 		7A63895C2AB6849900455A65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A63895B2AB6849900455A65 /* Assets.xcassets */; };
@@ -32,10 +30,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A6115C82B712E0B0094DDB3 /* Defaults in Frameworks */,
 				7A869C822ADD653D0083BCEE /* GameController.framework in Frameworks */,
 				7A6115CB2B712E3F0094DDB3 /* LaunchAtLogin in Frameworks */,
-				7A6115C52B7129B60094DDB3 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,8 +100,6 @@
 			);
 			name = CameraPanTilt;
 			packageProductDependencies = (
-				7A6115C42B7129B60094DDB3 /* KeyboardShortcuts */,
-				7A6115C72B712E0B0094DDB3 /* Defaults */,
 				7A6115CA2B712E3F0094DDB3 /* LaunchAtLogin */,
 			);
 			productName = CameraPanTilt;
@@ -137,8 +131,6 @@
 			);
 			mainGroup = 7A63894B2AB6849800455A65;
 			packageReferences = (
-				7A6115C32B7129B60094DDB3 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
-				7A6115C62B712E0B0094DDB3 /* XCRemoteSwiftPackageReference "Defaults" */,
 				7A6115C92B712E3F0094DDB3 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
 			);
 			productRefGroup = 7A6389552AB6849800455A65 /* Products */;
@@ -384,22 +376,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7A6115C32B7129B60094DDB3 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.17.0;
-			};
-		};
-		7A6115C62B712E0B0094DDB3 /* XCRemoteSwiftPackageReference "Defaults" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sindresorhus/Defaults";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		7A6115C92B712E3F0094DDB3 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin";
@@ -411,16 +387,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7A6115C42B7129B60094DDB3 /* KeyboardShortcuts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7A6115C32B7129B60094DDB3 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
-			productName = KeyboardShortcuts;
-		};
-		7A6115C72B712E0B0094DDB3 /* Defaults */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7A6115C62B712E0B0094DDB3 /* XCRemoteSwiftPackageReference "Defaults" */;
-			productName = Defaults;
-		};
 		7A6115CA2B712E3F0094DDB3 /* LaunchAtLogin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7A6115C92B712E3F0094DDB3 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
