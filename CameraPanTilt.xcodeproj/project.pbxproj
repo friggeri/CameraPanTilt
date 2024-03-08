@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7A0307852AB688710066971A /* USBDeviceSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7A0307842AB688710066971A /* USBDeviceSwift */; };
+		7A3996B12B8E152800F257C9 /* HIDDeviceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3996B02B8E152800F257C9 /* HIDDeviceMonitor.swift */; };
 		7A6115C52B7129B60094DDB3 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 7A6115C42B7129B60094DDB3 /* KeyboardShortcuts */; };
 		7A6115C82B712E0B0094DDB3 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = 7A6115C72B712E0B0094DDB3 /* Defaults */; };
 		7A6115CB2B712E3F0094DDB3 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 7A6115CA2B712E3F0094DDB3 /* LaunchAtLogin */; };
@@ -18,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A3996B02B8E152800F257C9 /* HIDDeviceMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIDDeviceMonitor.swift; sourceTree = "<group>"; };
 		7A6389542AB6849800455A65 /* CameraPanTilt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraPanTilt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6389572AB6849800455A65 /* CameraPanTiltApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPanTiltApp.swift; sourceTree = "<group>"; };
 		7A63895B2AB6849900455A65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,7 +34,6 @@
 			files = (
 				7A6115C82B712E0B0094DDB3 /* Defaults in Frameworks */,
 				7A869C822ADD653D0083BCEE /* GameController.framework in Frameworks */,
-				7A0307852AB688710066971A /* USBDeviceSwift in Frameworks */,
 				7A6115CB2B712E3F0094DDB3 /* LaunchAtLogin in Frameworks */,
 				7A6115C52B7129B60094DDB3 /* KeyboardShortcuts in Frameworks */,
 			);
@@ -62,6 +62,7 @@
 		7A6389562AB6849800455A65 /* CameraPanTilt */ = {
 			isa = PBXGroup;
 			children = (
+				7A3996B02B8E152800F257C9 /* HIDDeviceMonitor.swift */,
 				7A6389572AB6849800455A65 /* CameraPanTiltApp.swift */,
 				7A63895B2AB6849900455A65 /* Assets.xcassets */,
 				7A6389602AB6849900455A65 /* CameraPanTilt.entitlements */,
@@ -103,7 +104,6 @@
 			);
 			name = CameraPanTilt;
 			packageProductDependencies = (
-				7A0307842AB688710066971A /* USBDeviceSwift */,
 				7A6115C42B7129B60094DDB3 /* KeyboardShortcuts */,
 				7A6115C72B712E0B0094DDB3 /* Defaults */,
 				7A6115CA2B712E3F0094DDB3 /* LaunchAtLogin */,
@@ -137,7 +137,6 @@
 			);
 			mainGroup = 7A63894B2AB6849800455A65;
 			packageReferences = (
-				7A0307832AB688710066971A /* XCRemoteSwiftPackageReference "USBDeviceSwift" */,
 				7A6115C32B7129B60094DDB3 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
 				7A6115C62B712E0B0094DDB3 /* XCRemoteSwiftPackageReference "Defaults" */,
 				7A6115C92B712E3F0094DDB3 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
@@ -169,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A6389582AB6849800455A65 /* CameraPanTiltApp.swift in Sources */,
+				7A3996B12B8E152800F257C9 /* HIDDeviceMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,14 +384,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7A0307832AB688710066971A /* XCRemoteSwiftPackageReference "USBDeviceSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Arti3DPlayer/USBDeviceSwift";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 		7A6115C32B7129B60094DDB3 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
@@ -419,11 +411,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7A0307842AB688710066971A /* USBDeviceSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7A0307832AB688710066971A /* XCRemoteSwiftPackageReference "USBDeviceSwift" */;
-			productName = USBDeviceSwift;
-		};
 		7A6115C42B7129B60094DDB3 /* KeyboardShortcuts */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7A6115C32B7129B60094DDB3 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;

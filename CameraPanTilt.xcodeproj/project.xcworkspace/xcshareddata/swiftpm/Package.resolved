@@ -26,15 +26,6 @@
         "branch" : "main",
         "revision" : "d811817ce35d74872a1170c851cab243a2b8b559"
       }
-    },
-    {
-      "identity" : "usbdeviceswift",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Arti3DPlayer/USBDeviceSwift",
-      "state" : {
-        "branch" : "master",
-        "revision" : "78cdfede0475f518ee9e8ab08cc559e75436ac25"
-      }
     }
   ],
   "version" : 2
