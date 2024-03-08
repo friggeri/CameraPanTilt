@@ -23,6 +23,7 @@
 		7A63895E2AB6849900455A65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7A6389602AB6849900455A65 /* CameraPanTilt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CameraPanTilt.entitlements; sourceTree = "<group>"; };
 		7A869C812ADD653D0083BCEE /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		7ACC5E522B9B502200989F5E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 				7A63895B2AB6849900455A65 /* Assets.xcassets */,
 				7A6389602AB6849900455A65 /* CameraPanTilt.entitlements */,
 				7A63895D2AB6849900455A65 /* Preview Content */,
+				7ACC5E522B9B502200989F5E /* README.md */,
 			);
 			path = CameraPanTilt;
 			sourceTree = "<group>";
