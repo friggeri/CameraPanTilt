@@ -42,6 +42,7 @@
 		7A63894B2AB6849800455A65 = {
 			isa = PBXGroup;
 			children = (
+				7ACC5E522B9B502200989F5E /* README.md */,
 				7A6389562AB6849800455A65 /* CameraPanTilt */,
 				7A6389552AB6849800455A65 /* Products */,
 				7A869C802ADD653D0083BCEE /* Frameworks */,
@@ -64,7 +65,6 @@
 				7A63895B2AB6849900455A65 /* Assets.xcassets */,
 				7A6389602AB6849900455A65 /* CameraPanTilt.entitlements */,
 				7A63895D2AB6849900455A65 /* Preview Content */,
-				7ACC5E522B9B502200989F5E /* README.md */,
 			);
 			path = CameraPanTilt;
 			sourceTree = "<group>";
